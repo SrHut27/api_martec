@@ -33,6 +33,7 @@ function sendFileContoll(req, res) {
             yield axios_1.default.post(`${process.env.ENDPOINT}`, form, {
                 headers: Object.assign({ Authorization: `Bearer ${token}` }, form.getHeaders()),
             });
+            return res.status(200).json("Mensagem enviada com sucesso!");
         }
         catch (error) {
             console.log(error);

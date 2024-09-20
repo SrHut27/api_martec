@@ -1,0 +1,120 @@
+.uploadContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh;
+    background: linear-gradient(135deg, #f0f0f0, #dcdcdc);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1.2s ease-in-out;
+  }
+  
+  .logo {
+    width: 120px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    background-color: #fff;
+    padding: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .title {
+    font-size: 26px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .fileInput {
+    margin-bottom: 20px;
+    padding: 12px;
+    width: 100%;
+    max-width: 400px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #fafafa;
+    transition: border-color 0.3s ease;
+  }
+  
+  .fileInput:hover {
+    border-color: #0070f3;
+  }
+  
+  .uploadButton {
+    background-color: #0070f3;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .uploadButton:hover {
+    background-color: #005bb5;
+  }
+  
+  .successStatus {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #28a745;
+    font-weight: 500;
+  }
+  
+  .errorStatus {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #dc3545;
+    font-weight: 500;
+  }
+  
+  .fileUrlContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .fileUrl {
+    font-size: 16px;
+    color: #0070f3;
+  }
+  
+  .fileUrl a {
+    text-decoration: none;
+    color: #0070f3;
+    font-weight: 500;
+  }
+  
+  .fileUrl a:hover {
+    text-decoration: underline;
+  }
+  
+  .copyButton {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .copyButton:hover {
+    background-color: #218838;
+  }
+  
+  .copyStatus {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #28a745;
+  }
+  

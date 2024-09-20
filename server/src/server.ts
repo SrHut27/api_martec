@@ -9,7 +9,11 @@ import cors from "cors";
 const PORT: string | number = process.env.PORT || 3002;
 const app = express();
 
-
+app.use(cors({
+    origin: process.env.CLIENT_URL,
+    methods: ["GET", "POST", "PUT", "DELETE"], // Métodos HTTP permitidos
+    credentials: true 
+}))
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());

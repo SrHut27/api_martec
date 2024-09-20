@@ -9,8 +9,14 @@ const express_1 = __importDefault(require("express"));
 const body_parser_1 = __importDefault(require("body-parser"));
 const filesDirectory_1 = __importDefault(require("./handlers/filesDirectory"));
 const routes_1 = __importDefault(require("./routes/routes"));
+const cors_1 = __importDefault(require("cors"));
 const PORT = process.env.PORT || 3002;
 const app = (0, express_1.default)();
+app.use((0, cors_1.default)({
+    origin: process.env.CLIENT_URL,
+    methods: ["GET", "POST", "PUT", "DELETE"], // Métodos HTTP permitidos
+    credentials: true
+}));
 app.use(body_parser_1.default.urlencoded({ extended: true }));
 app.use(body_parser_1.default.json());
 (0, filesDirectory_1.default)();
