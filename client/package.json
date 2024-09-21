@@ -10,7 +10,9 @@
   "main": "index.js",
   "devDependencies": {},
   "scripts": {
-    "dev": "next dev"
+    "dev": "next dev -p 3094",
+    "build": "next build",
+    "start": "next dev -p 3094"
   },
   "keywords": [],
   "author": "",
